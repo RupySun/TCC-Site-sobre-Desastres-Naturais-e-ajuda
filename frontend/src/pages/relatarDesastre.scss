@@ -1,0 +1,135 @@
+.relatar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #377D94;
+}
+
+.secao-relatar {
+  background-color: #377D94;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.secao-relatar h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.opcoes-relatar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.botao-relatar {
+  background-color: #264E63;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+.botao-relatar:hover {
+  background-color: #4b4b4b;
+}
+
+.botao-relatar.selecionado {
+  background-color: #4b4b4b;
+  border: 2px solid yellow;
+}
+
+.botao-relatar-principal {
+  background-color: #8F8F8F;
+  color: #000000;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.botao-relatar-principal:hover {
+  background-color: #4b4b4b;
+}
+
+.dados-agregados-secao {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+}
+
+.dados-agregados-secao h4 {
+  color: #377D94;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.dados-agregados {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.item-agregado {
+  background-color: #377D94;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-conteudo {
+  flex: 1;
+}
+
+.botao-deletar {
+  background-color: #8F8F8F;
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 12px;
+}
+
+.botao-deletar:hover {
+  background-color: #4b4b4b;
+}
+
+.input-cidade {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.nenhum-dado {
+  text-align: center;
+  color: #ffffff;
+  font-style: italic;
+}

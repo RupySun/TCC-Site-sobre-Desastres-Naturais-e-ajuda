@@ -1,0 +1,223 @@
+.container-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
+}
+
+.cabecalho {
+  background-color: #264E63;
+  color: #fff;
+  padding: 1px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  flex-wrap: wrap;
+  box-shadow: inset 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 150px;
+  margin-right: -10px;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -5px;
+  font-weight: 800;
+}
+
+.r {
+  font-size: 0.6em;
+  position: relative;
+  top: -0.7em;
+  right: -0.2em;
+}
+
+.botoes-acao {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-top: 10px;
+}
+
+.botao-acao {
+  background-color: #8F8F8F;
+  color: #000000;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  box-shadow: 0 0px 16px rgba(0, 0, 0, 0.4);
+}
+
+.botao-acao:hover {
+  background-color: #4b4b4b;
+}
+
+.botoes-autenticacao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.boas-vindas {
+  font-size: 14px;
+  color: #fff;
+}
+
+.botao {
+  background-color: #8F8F8F;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  box-shadow: 0 0px 16px rgba(0, 0, 0, 0.4);
+}
+
+.botao:hover {
+  background-color: #4b4b4b;
+}
+
+.botao-perigo {
+  background-color: #8F8F8F;
+}
+
+.botao-perigo:hover {
+  background-color: #4b4b4b;
+}
+
+.conteudo-principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: black;
+}
+
+.pesquisa-e-botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.barra-pesquisa {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+
+.entrada-pesquisa {
+  display: flex;
+  width: 500px;
+  padding: -10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-shadow: 0 0px 16px rgba(0, 0, 0, 0.4);
+}
+
+.botao-pesquisar {
+  display: flex;
+  padding: 6px 5px;
+  background-color: #8F8F8F;
+  color: #000000;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 0px 16px rgba(0, 0, 0, 0.4);
+}
+
+.botao-pesquisar:hover {
+  background-color: #4b4b4b;
+  box-shadow: 0 0px 16px rgba(0, 0, 0, 0.4);
+}
+
+.icone-lupa {
+  width: 20px;
+  height: 20px;
+}
+
+.container-mapa {
+  margin-bottom: 1px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  pointer-events: auto;
+}
+
+.rodape {
+  background-color: #264E63;
+  height: 200px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.barra-inferior {
+  background-color: #418ca5;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.barra-inferior h4 {
+  margin: 0 0 10px 0;
+  color: white;
+}
+
+.lista-locais {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.item-local {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-local:active {
+  transform: scale(0.95);
+}
+
+.imagem-local {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.info-local p {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #333;
+}
